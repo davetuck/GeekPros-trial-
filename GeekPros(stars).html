@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geek Pros Starry</title>
+    <link rel="stylesheet" href="./GeekPros(stars).css" />
+  </head>
+  <body>
+    <div class="stars"></div>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="nav-logo">
+          <div class="quote-button-wrapper">
+            <button class="button button__quote">Get A Quote</button>
+          </div>
+        </a>
+        <div class="logo">
+          <img
+            class="top-logo"
+            src="./assets/logo/(highres)purple:green.png"
+            alt=""
+          />
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+      const navLink = document.querySelectorAll(".nav-link");
+
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    </script>
+    <div class="main">
+      <div class="section1">
+        <div class="hero2-wrapper">
+          <h1 class="section1-tag">
+            Is your phone<strong> slowing you down?</strong>
+          </h1>
+          <img class="hero2" src="./assets/broken1(black).png" alt="" />
+        </div>
+      </div>
+      <div class="section2">
+        <div class="hero2-wrapper">
+          <img
+            class="hero1"
+            src="./assets/repair2(purple-green-cropped).png"
+            alt=""
+          />
+          <div class="section2-tag-wrapper">
+            <h1 class="section2-tag">Geek Pros can <strong>help!</strong></h1>
+          </div>
+        </div>
+      </div>
+      <div class="section3-tag-wrapper">
+        <div class="section3">
+          <h1 class="section3-tag">
+            We serve <span>Lakeview</span>, <span>Lake County</span>, and the
+            surrounding area. Get a free quote today!
+          </h1>
+          <img class="tall-man" src="./assets/tall-man.png" alt="" />
+        </div>
+        <div class="contact-button-wrapper">
+          <button class="button button__call">
+            <img class="call" src="./assets/phone.png" alt="" />
+          </button>
+          <button class="button button__text">
+            <img class="text" src="./assets/message.png" alt="" />
+          </button>
+          <button class="button button__email">
+            <img class="email" src="./assets/email.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="footer-wrapper">
+        <p class="footer-text">&#169; 2022 Geek Pros</p>
+      </div>
+    </div>
+  </body>
+</html>
