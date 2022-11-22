@@ -398,6 +398,11 @@ span {
   }
   .button__quote {
     width: 75px;
+    font-size: 14px;
+    margin-left: -10px;
+  }
+  .top-logo {
+    margin-left: -15px;
   }
   .nav-menu {
     top: 4.5rem;
@@ -419,6 +424,7 @@ span {
   }
   .button__quote {
     width: 75px;
+    font-size: 10px;
   }
   .nav-menu {
     top: 4rem;
