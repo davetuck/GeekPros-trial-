@@ -97,19 +97,23 @@ strong {
 
 .quote-button-wrapper {
   display: flex;
-  width: 130px;
+  width: 250px;
+  margin-left: 50px;
 }
 
 .button__quote {
   color: white;
   border: none;
-  height: 50px;
+  height: 55px;
   width: 100%;
   border-radius: 25px;
   background-color: rgb(41, 111, 246);
   transition: 250ms;
   cursor: pointer;
   font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button__quote:hover {
@@ -325,13 +329,15 @@ span {
   height: 50px;
   border-radius: 25px;
   border: none;
-  padding-top: 4px;
   width: 15%;
   min-width: 100px;
   color:white;
   background-color: rgb(41, 111, 246);
   transition: 250ms;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button:hover {
@@ -366,9 +372,12 @@ span {
 
 /* SMARTPHONES & TABLETS */
 
-@media (max-width: 1050px) {
+@media (max-width: 1091px) {
   .nav-menu {
     top: 6rem;
+  }
+  .button__quote {
+    padding-left: 17px;
   }
 }
 
@@ -395,11 +404,11 @@ span {
   }
   .quote-button-wrapper {
     width: 80px;
+    margin-left: 0;
   }
   .button__quote {
     width: 75px;
     font-size: 14px;
-    margin-left: -10px;
   }
   .top-logo {
     margin-left: -15px;
