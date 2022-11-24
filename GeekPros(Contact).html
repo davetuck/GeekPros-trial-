@@ -12,42 +12,40 @@
       <h1 class="h1contact">CONTACT</h1>
       <h1 class="h1us">US</h1>
     </header>
-    <form action="" class="contact-form">
+    <form action="https://formsubmit.co/c5f7756efcc796943c28189a96581e0d" method="POST" class="contact-form">
       <div class="input-wrapper">
         <div class="input input__name">
           <p>Name</p>
-          <input class="contact contact__name" type="text" />
+          <input class="contact contact__name" type="text" name="Name"/>
         </div>
         <div class="input input__phone">
           <p>Phone</p>
           <input
             placeholder="( ___ ) ___ - ____"
             class="contact contact__phone"
-            type="text"
+            type="text" name="Phone"
           />
         </div>
         <div class="input input__email">
           <p>Email</p>
-          <input class="contact contact__email" type="email" />
+          <input class="contact contact__email" type="email" name="Email"/>
         </div>
-        <label class="contact contact__devices" for=""
-          >Device
-          <select class="drop-down" name="" id="">
-            <option value="select">(select)</option>
-            <option value="select select__iphone">Apple Cell Phone (iPhone)</option>
-            <option value="select select__android">Android Cell Phone</option>
-            <option value="select select__laptop">Laptop Computer</option>
-            <option value="select select__desktop">Desktop Computer</option>
-            <option value="select select__tablet">Tablet</option>
-            <option value="select select__other">Other (Please Describe Below)</option>
+        <p>Device</p>
+          <select class="drop-down" name="Device" id="" required>
+            <option value="select" name="(select)">(select)</option>
+            <option value="select select__iphone" name="Apple Cell Phone (iPhone)">Apple Cell Phone (iPhone)</option>
+            <option value="select select__android" name="Android Cell Phone">Android Cell Phone</option>
+            <option value="select select__laptop" name="Laptop Computer">Laptop Computer</option>
+            <option value="select select__desktop" name="Desktop Computer">Desktop Computer</option>
+            <option value="select select__tablet" name="Tablet">Tablet</option>
+            <option value="select select__other" name="Other (Please Describe Below)">Other (Please Describe Below)</option>
           </select>
-        </label>
         <div class="input input__comments">
           <p>Comments</p>
-          <textarea class="contact contact__comments" name="" id="" cols="30" rows="5"></textarea>
+          <textarea class="contact contact__comments" id="" cols="30" rows="5" name="Comments"></textarea>
         </div>
         <div class="check-box-wrapper">
-          <input class="check-box" type="checkbox" />
+          <input class="check-box" type="checkbox" name="Term&Cond" required/>
           <p class="terms">
             By checking this box you agree to our
             <a class="terms-link" href="">Terms Of Service</a>
