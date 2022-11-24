@@ -113,3 +113,24 @@ p {
   box-shadow: none;
 
 }
+
+/* TABLETS AND SMALL COMPUTERS */
+
+@media (max-width: 415px) {
+  .h1contact {
+    font-size: 60px;
+  }
+  .h1us {
+    font-size: 60px;
+    margin-left: 10px;
+  }
+  .contact__name {
+    width: 350px;
+  }
+  .contact__comments {
+    width: 350px;
+  }
+  body {
+    margin: 25px;
+  }
+}
